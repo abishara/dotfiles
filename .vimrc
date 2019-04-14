@@ -36,17 +36,5 @@ fixdel
 " au BufNewFile,BufRead *.json set filetype=python
 " au BufNewFile,BufRead *.bashrc set filetype=sh
 
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-"Plugin 'VundleVim/Vundle.vim'
-"Bundle 'Rykka/riv.vim'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-
-"let g:riv_disable_folding = 1
+filetype plugin on
+let g:instant_markdown_slow = 1
