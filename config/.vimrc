@@ -6,8 +6,8 @@ syntax on
 set showmatch
 set matchtime=3
 set number
-set ts=2
-set sw=2
+set ts=4
+set sw=4
 set nowrap
 set tw=74
 set smartindent
@@ -35,6 +35,9 @@ fixdel
 " au BufNewFile,BufRead *.vh set filetype=verilog
 " au BufNewFile,BufRead *.json set filetype=python
 " au BufNewFile,BufRead *.bashrc set filetype=sh
+
+autocmd BufRead /tmp/psql.edit.* set syntax=sql
+autocmd Filetype,BufRead,BufNewFile javascript setlocal ts=4 sw=4 "sts=0
 
 filetype plugin on
 let g:instant_markdown_slow = 1
