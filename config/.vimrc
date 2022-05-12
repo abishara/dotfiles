@@ -38,6 +38,10 @@ fixdel
 
 autocmd BufRead /tmp/psql.edit.* set syntax=sql
 autocmd Filetype,BufRead,BufNewFile javascript setlocal ts=4 sw=4 "sts=0
+autocmd Filetype,BufRead,BufNewFile *.proto setlocal ts=2 sw=2 "sts=0
 
 filetype plugin on
 let g:instant_markdown_slow = 1
+
+" for syntax highlighting being slow with typescript
+set re=0
